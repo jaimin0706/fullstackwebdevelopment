@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
 
+.box{
+    height: 100vh;;
+    width: 100vw;
+    margin: 10px;
+
+}
+.box1{
+    background-color: rebeccapurple;
+}
+.box2{
+    background-color: darkcyan;
+}
+.box3{
+    background-color: sandybrown;
+}
+.box4{
+    background-color: lightcoral;
+}
+.box5{
+    background-color: red;
+}
+
+/* This is a Media query demo page */
+
+@media screen and (max-width:1440px){
+    .one{
+        display: flex;
+
+    }
+    .box1{
+        height: 100vh;
+        width: 100wh;
+    }
+    
+}
+
+/* Screen size:1440px */
+
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .one{
+        display: none;
+    }
+    .two{
+        display: flex;
+    }
+    .box2{
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+/* Screen size:1024px */
+
+@media screen and (min-width:786px) and (max-width:1024px){
+    .one{
+        display: none;
+    }
+    .two{
+        display: none;
+    }
+    .three{
+        display: flex;
+    }
+    .box3{
+        height: 100vh;
+        width: 100vw;
+    }
+
+}
+
+/* Screen size:786px */
+
+@media screen and (min-width:425px) and (max-width:786px){
+    .one{
+        display: none;
+    }
+    .two{
+        display: none;
+    }
+    .three{
+        display: none;
+    }
+    .four{
+        display: flex;
+    }
+    .box4{
+        height: 100vh;
+        width: 100vw;
+    }
+
+}
+
+/* Screen size:425px */
+
+@media screen and (max-width:425px){
+    .one{
+        display: none;
+    }
+    .two{
+        display: none;
+    }
+    .three{
+        display: none;
+    }
+    .four{
+        display: none;
+    }
+    .five{
+        display: flex;
+    }
+    .box5{
+        height: 100vh;
+        width: 100vw;
+    }
+
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="one">
+        <div class="box box1">This is a Media query demo page</div>
+       </div>
+    
+    <!-- ......................... -->
+    <div class="two">
+        <div class="box box2">Screen size:1440px</div>
+    </div>
+    
+    <!-- .......................... -->
+    
+    <div class="three">
+        <div class="box box3">Screen size:1024px</div>
+    </div>
+    
+    <!-- ........................ -->
+    
+    <div class="four">
+        <div class="box box4">Screen size:786px</div> 
+    </div>
+    
+    <!-- ............................. -->
+    
+    <div class="five">
+        <div class="box box5">Screen size:425px</div>
+    </div>
+    
+    <!-- ..................... -->
+</body>
+</html>
