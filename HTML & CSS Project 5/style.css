@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(45, 45, 91);
+    background-attachment: scroll;
+   
+}
+
+/* ....................Frame 1................. */
+
+nav ul{
+    display: flex;
+    align-items: flex-end;
+    gap:30px;
+    
+}
+li{
+    color: white;
+    list-style: none;
+    position: relative;
+    left: 1200px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+   
+}
+.left{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+span{
+    color: yellow;
+    position: relative;
+    bottom: 20px;
+}
+
+h2{
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 10px;
+}
+
+figcaption{
+    color: white;
+   position: relative;
+    left: 100px;
+    font-weight: bold;  
+}
+
+.last{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 10px;
+   gap:5px;
+   }
+
+
+  
+/* .................................... */
+
+@media screen and (max-width:632px){
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+  nav ul{
+        display: none;
+    }
+
+    h2{
+        font-weight: bolder;
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color:blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+   .one{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+
+   .footer{
+    display: flex;
+    gap: 20px;
+   }
+}
+
+
+    
+    
+    
+
+ 
