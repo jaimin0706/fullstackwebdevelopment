@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A common eventlistner</title>
+   
+</head>
+<body>
+    <!-- 1 -->
+    <p id="one" one()></p>
+    <!-- ........ -->
+
+    <!-- 2 -->
+    <h2>Doubleclick</h2>
+    <p id="two" two()></p>
+
+    <!-- ....................... -->
+    <!-- 3 -->
+    <h2>Mouseover</h2>
+    <p id="three" three()></p>
+
+    <!-- ................... -->
+    <!-- 4 -->
+    <h2>mouse out</h2>
+    <p id="four" four()></p>
+
+    <!-- .................... -->
+     <!-- 5-onkeypress -->
+
+    <label for="Batch Name">Enter your Batch Name..</label>
+    <input type="text" id="five" onkeypress="kp()" placeholder="onkeypress">
+
+
+    <!-- ..................... -->
+    <hr>
+   <!-- 6-keydown - keyup -->
+
+   <label for="couse name">Please Enter Your Couse Name:</label>
+    <input type="text" id="six" placeholder="keydown keyup" onkeydown="d()" onkeyup="u()" >
+    
+
+
+    <!-- ......................script  tag.....................-->
+  <script>
+    // 1
+     document.addEventListener("click" , one);
+   
+   function one(){
+    document.getElementById("one").innerText="HELLO PW SKILLS";
+   }
+
+//    2
+document.addEventListener("dblclick" , two);
+function two(){
+    document.getElementById("two").innerText="Press me twice";
+}
+
+
+//3
+document.addEventListener("mouseover" , three);
+function three(){
+    document.getElementById("three").innerText=" HERE MOUSEOVER.."
+}
+
+// 4
+document.addEventListener("mouseout" , four);
+function four(){
+    document.getElementById("four").innerText="can you plese mouse out";
+}
+
+// 5-Onkeypress
+          function kp(){
+            document.getElementById("five").style.backgroundColor="red";
+            document.getElementById("five").style.color="blue";
+
+        }
+
+    // 6-onkeyup and keydown.......
+
+    function u(){
+            document.getElementById("six").style.backgroundColor="white";
+        }
+        function d(){
+            document.getElementById("six").style.backgroundColor="gray";
+        }
+
+
+  </script>
+</body>
+</html>

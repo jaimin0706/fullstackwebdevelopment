@@ -1,0 +1,23 @@
+body{
+    border: 2px solid black;
+}
+
+h1{
+    text-align: center;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 8px;
+    border-radius: 5px;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
